@@ -1,0 +1,190 @@
+/* =============================================
+   MiauBuau Pet Shop - CSS Personalizado
+   Aluna: Manu
+   ============================================= */
+
+:root {
+    --cor-primaria: #a34f74;
+    --cor-secundaria: #f8d7e6;
+    --cor-fundo: #fff7fb;
+    --cor-texto: #5c3b47;
+    --cor-primaria-escura: #7c3456;
+}
+
+/* ---- GERAL ---- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--cor-texto);
+    scroll-behavior: smooth;
+}
+
+/* Override do Bootstrap - cor primária para rosa/pet shop */
+.bg-primary {
+    background-color: var(--cor-primaria) !important;
+}
+
+.text-primary {
+    color: var(--cor-primaria) !important;
+}
+
+.btn-primary {
+    background-color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: var(--cor-primaria-escura);
+    border-color: var(--cor-primaria-escura);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+.btn-outline-primary {
+    color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
+    color: #fff;
+}
+
+/* ---- NAVBAR ---- */
+.navbar {
+    background-color: var(--cor-primaria) !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: var(--cor-secundaria) !important;
+}
+
+/* ---- CAROUSEL ---- */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.55);
+    border-radius: 12px;
+    padding: 20px 30px;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    filter: brightness(0.75);
+}
+
+/* ---- CARDS ---- */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* ---- CARDS DE EQUIPE ---- */
+.img-equipe {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border: 4px solid var(--cor-primaria);
+}
+
+/* ---- ACCORDION ---- */
+.accordion-button:not(.collapsed) {
+    color: var(--cor-primaria);
+    background-color: #fff0f6;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.2rem rgba(163, 79, 116, 0.25);
+}
+
+/* ---- SEÇÃO HERO (cabeçalho interno) ---- */
+.hero-interno {
+    background: linear-gradient(135deg, var(--cor-primaria), #d4849f);
+    padding: 60px 0;
+    color: white;
+}
+
+/* ---- MAPA ---- */
+.mapa-container iframe {
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* ---- FOOTER ---- */
+footer {
+    background-color: #1a1a1a !important;
+}
+
+footer a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--cor-secundaria) !important;
+}
+
+footer .redes-sociais a {
+    font-size: 1.6rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+footer .redes-sociais a:hover {
+    color: var(--cor-secundaria) !important;
+    transform: scale(1.2);
+}
+
+/* ---- DEPOIMENTOS ---- */
+.secao-depoimentos {
+    background-color: var(--cor-primaria);
+}
+
+/* ---- UTILITÁRIOS ---- */
+.secao-titulo {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.secao-titulo::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--cor-secundaria);
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Responsivo - ajustes mobile */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 280px;
+    }
+    .carousel-caption {
+        display: none;
+    }
+}
