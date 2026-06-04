@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Shop Cute | Agendamento</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="agendamento.html">Agendamento</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Agendamento de Serviços</h2>
+      <p>
+        Preencha o formulário abaixo para agendar o melhor atendimento para o seu pet.
+      </p>
+
+      <form action="#" method="post">
+        <label for="nomeTutor">Nome do tutor:</label>
+        <input type="text" id="nomeTutor" name="nomeTutor" required>
+
+        <label for="nomePet">Nome do pet:</label>
+        <input type="text" id="nomePet" name="nomePet" required>
+
+        <label for="porte">Porte do pet:</label>
+        <select id="porte" name="porte">
+          <option>Pequeno</option>
+          <option>Médio</option>
+          <option>Grande</option>
+        </select>
+
+        <label for="servico">Escolha o serviço principal:</label>
+        <select id="servico" name="servico">
+          <option>Banho Premium</option>
+          <option>Tosa Completa</option>
+          <option>Spa Relaxante</option>
+          <option>Hidratação</option>
+          <option>Limpeza de Ouvidos</option>
+          <option>Corte de Unhas</option>
+          <option>Consulta nutricional</option>
+          <option>Alimentação natural</option>
+          <option>Compra de roupas</option>
+          <option>Compra de acessórios</option>
+        </select>
+
+        <label for="data">Data desejada:</label>
+        <input type="date" id="data" name="data">
+
+        <label for="horario">Horário:</label>
+        <input type="time" id="horario" name="horario">
+
+        <p><strong>Tipo de atendimento:</strong></p>
+        <input type="radio" id="presencial" name="atendimento" value="Presencial">
+        <label for="presencial">Presencial</label>
+
+        <input type="radio" id="delivery" name="atendimento" value="Delivery">
+        <label for="delivery">Delivery de alimentação natural</label>
+
+        <p><strong>Serviços adicionais:</strong></p>
+        <input type="checkbox" id="hidratacao" name="adicional" value="Hidratação">
+        <label for="hidratacao">Hidratação</label><br>
+
+        <input type="checkbox" id="laco" name="adicional" value="Laço decorativo">
+        <label for="laco">Laço decorativo</label><br>
+
+        <input type="checkbox" id="perfume" name="adicional" value="Perfume suave">
+        <label for="perfume">Perfume suave</label><br>
+
+        <input type="checkbox" id="foto" name="adicional" value="Foto instagramável">
+        <label for="foto">Foto instagramável</label><br>
+
+        <input type="checkbox" id="acompanhar" name="adicional" value="Acompanhar banho em tempo real">
+        <label for="acompanhar">Acompanhar banho em tempo real</label><br>
+
+        <label for="observacoes">Observações:</label>
+        <textarea id="observacoes" name="observacoes" rows="5" placeholder="Conte-nos algo importante sobre seu pet"></textarea>
+
+        <div class="botoes">
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Limpar">
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
